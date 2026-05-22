@@ -1,0 +1,6 @@
+{
+  "name": "Burger King High-Converting Platform",
+  "description": "Mobile-first high-converting fast-food web application for Burger King featuring menus, royal loyalty perks, simulated store detection, flash deals, and active order funnels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

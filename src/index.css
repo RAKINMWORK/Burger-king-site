@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bk-burgundy: #502314;
+  --color-bk-orange: #ff872e;
+  --color-bk-cream: #f5ebdc;
+  --color-bk-dark: #2a110a;
+  --color-bk-darkcream: #e6dac8;
+  --font-display: "Lilita One", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom continuous marquee keyframe */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Spark style animations for the grill element */
+@keyframes flicker {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.35; }
+}
+
+.animate-flicker {
+  animation: flicker 4s ease-in-out infinite;
+}
